@@ -1,2 +1,2 @@
 # TankWars
-Open world, head to heard tank fight with simple AI, built in Unreal 4.
+Open world, head to head tank fight with simple AI. Built in Unreal 4.
