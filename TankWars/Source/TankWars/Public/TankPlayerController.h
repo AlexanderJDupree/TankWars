@@ -14,11 +14,19 @@ UCLASS()
 class TANKWARS_API ATankPlayerController : public APlayerController
 {
 	GENERATED_BODY()
+
+protected:
+	
+	virtual void BeginPlay() override;
 	
 public:
 	
+	virtual void Tick(float DeltaTime) override;
+
 	ATank* GetControlledTank() const;
+
+private:
 	
-	virtual void BeginPlay() override;
+	void AimTowardsCrosshair(); 
 
 };
