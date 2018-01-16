@@ -17,9 +17,11 @@ class TANKWARS_API ATankAIController : public AAIController
 	
 public:
 
-	ATank* GetControlledTank() const;
-
 	virtual void BeginPlay() override;
+
+	virtual void Tick(float DeltaTime) override;
+
+	ATank* GetControlledTank() const;
 
 private:
 
