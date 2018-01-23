@@ -37,7 +37,7 @@ void ATankPlayerController::AimTowardsCrosshair()
 	FVector HitLocation; // Out parameter
 	if (GetSightRayHitLocation(HitLocation)) // Has "side-effect", going to line trace
 	{
-		GetControlledTank()->AimtAt(HitLocation);
+		GetControlledTank()->AimAt(HitLocation);
 		// TODO tell the barrel to aim towards cross hair.
 	}
 
